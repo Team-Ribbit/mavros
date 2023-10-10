@@ -32,10 +32,10 @@ run_get() {
 # check which command script is available
 if hash geographiclib-get-geoids; then
 	run_get geoids geoids egm96-5
-      run_get geoids geoids egm2008-1
+        run_get geoids geoids egm2008-1
 	run_get gravity gravity egm96
 	run_get magnetic magnetic emm2015
-      run_get magnetic magnetic wmm2020
+        run_get magnetic magnetic wmm2020
 elif hash geographiclib-datasets-download; then # only allows install the goid model dataset
 	geographiclib-datasets-download egm96_5;
 else
