@@ -5,16 +5,16 @@
 - git:
     local-name: mavros/libmavconn
     uri: https://github.com/Team-Ribbit/mavros.git
-    version: release/noetic/libmavconn/1.17.0
-- git:
-    local-name: mavros
-    uri: https://github.com/Team-Ribbit/mavros.git
     version: v1.18.0-alpha
 - git:
+    local-name: mavros/mavros
+    uri: https://github.com/mavlink/mavros-release.git
+    version: release/noetic/mavros/1.17.0-1
+- git:
     local-name: mavros/mavros_extras
-    uri: https://github.com/Team-Ribbit/mavros.git
-    version: release/noetic/mavros_extras/1.17.0
+    uri: https://github.com/mavlink/mavros-release.git
+    version: release/noetic/mavros_extras/1.17.0-1
 - git:
     local-name: mavros/mavros_msgs
-    uri: https://github.com/Team-Ribbit/mavros.git
-    version: release/noetic/mavros_msgs/1.17.0
+    uri: https://github.com/mavlink/mavros-release.git
+    version: release/noetic/mavros_msgs/1.17.0-1
