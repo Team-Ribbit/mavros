@@ -3,6 +3,18 @@
     uri: https://github.com/mavlink/mavlink-gbp-release.git
     version: release/kinetic/mavlink
 - git:
+    local-name: mavros/libmavconn
+    uri: https://github.com/Team-Ribbit/mavros.git
+    version: v1.18.0-alpha
+- git:
     local-name: mavros
+    uri: https://github.com/Team-Ribbit/mavros.git
+    version: v1.18.0-alpha
+- git:
+    local-name: mavros/mavros_extras
+    uri: https://github.com/Team-Ribbit/mavros.git
+    version: v1.18.0-alpha
+- git:
+    local-name: mavros/mavros_msgs
     uri: https://github.com/Team-Ribbit/mavros.git
     version: v1.18.0-alpha
