@@ -283,7 +283,8 @@ void MAVConnUDP::do_sendto(bool check_tx_state)
 
 				if (error == boost::asio::error::network_unreachable) {
 					CONSOLE_BRIDGE_logWarn(PFXd "sendto: %s, retrying", sthis->conn_id, error.message().c_str());
-					// do not return, try to resend
+					sthis->close();
+					return;
 				}
 				else if (error) {
 					CONSOLE_BRIDGE_logError(PFXd "sendto: %s", sthis->conn_id, error.message().c_str());
